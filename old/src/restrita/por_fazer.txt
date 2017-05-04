@@ -1,0 +1,14 @@
+AGENDA
+	- agenda do google conectada ao email do geosaude
+
+CONTATO
+	- serviço de acesso aos contatos 
+
+EQUIPE 
+	- adicionar, editar, controlar membros e período 
+
+MAPAS
+	- conexão com a parte de mapas
+
+ROLES
+	- controle de cargos e permissões por parte do administrador (atuais: administrador, bolsista)

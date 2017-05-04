@@ -1,0 +1,13 @@
+body {
+  padding-top: 20px;
+}
+.page-header {
+  padding: 10px;
+}
+.dropdown-menu {
+    width: 250px;
+}
+.img-responsive{
+	width: 750px;
+	height: 300px;
+}

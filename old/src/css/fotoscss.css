@@ -1,0 +1,10 @@
+body {
+  padding-top: 20px;
+}
+.page-header {
+  padding: 10px;
+}
+.img-responsive{
+	height: 300px;
+	width: 400px;
+}

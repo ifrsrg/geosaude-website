@@ -1,0 +1,22 @@
+body {
+  padding-top: 20px;
+}
+.page-header {
+  padding: 10px;
+  text-align: center;
+}
+.carousel {
+  height: 300px;
+  margin-bottom: 60px;
+}
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
