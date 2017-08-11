@@ -1,4 +1,7 @@
 <?php
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 /**
  *  Tema UFPel 2016 para WordPress, Copyright 2013-2016 Universidade Federal de Pelotas
  */
@@ -67,3 +70,27 @@ include 'widgets/arquivo-widget.php';
 include 'widgets/linksdestacados-widget.php';
 include 'widgets/imagemcomlink/imagemcomlink.php';
 include 'widgets/manchete/manchete.php';
+
+
+function my_myme_types($mime_types){
+    $mime_types['dbf'] = 'application/dbase'; //Adding svg extension
+	$mime_types['prj'] = 'application/octet-stream';
+    $mime_types['sbn'] = 'application/octet-stream';
+	$mime_types['sbx'] = 'application/octet-stream';
+	$mime_types['shp'] = 'application/octet-stream';
+	$mime_types['xml'] = 'application/xml';
+	$mime_types['shx'] = 'application/octet-stream';
+	$mime_types['cpg'] = 'application/octet-stream';
+	$mime_types['rar'] = 'application/octet-stream';
+	$mime_types['aux'] = 'application/octet-stream';
+	$mime_types['rmf'] = 'audio/rmf';
+	$mime_types['rrd'] = 'application/octet-stream';
+	$mime_types['tif'] = 'image/tiff';
+	$mime_types['docx'] = 'application/msword';
+	$mime_types['tfw'] = 'application/octet-stream';
+	$mime_types['ovr'] = 'application/octet-stream';
+	$mime_types['idx'] = 'application/octet-stream';
+	$mime_types['pdf'] = 'application/pdf'; //Adding photoshop files
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);
